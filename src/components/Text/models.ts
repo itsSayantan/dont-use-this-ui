@@ -1,4 +1,4 @@
-import { Colors } from "@Common/colors";
+import { Colors } from "../../common/colors";
 import { ReactNode } from "react";
 
 export enum TextSizes {

@@ -1,4 +1,4 @@
-import { TextProps } from "@Components/Text/models";
+import { TextProps } from "../Text/models";
 
 export type LinkProps = TextProps & {
   href: "string";

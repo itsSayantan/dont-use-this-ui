@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import colors from "@Common/colors";
+import colors from "../../common/colors";
 import { TextSizes, TextProps } from "./models";
 
 export const TextStyles = css`

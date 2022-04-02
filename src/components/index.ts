@@ -1,2 +1,5 @@
-export { default as Text } from "@Components/Text";
-export { default as Link } from "@Components/Link";
+/**
+ * Components
+ */
+export { default as Text } from "./Text";
+export { default as Link } from "./Link";
