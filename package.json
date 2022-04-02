@@ -1,9 +1,13 @@
 {
   "name": "dont-use-this-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This is a UI component / utility collection project mainly for my personal projects",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c"
   },
