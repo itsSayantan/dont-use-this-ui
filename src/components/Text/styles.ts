@@ -1,8 +1,8 @@
+import styled, { css } from "styled-components";
 import colors from "@Common/colors";
-import styled from "styled-components";
 import { TextSizes, TextProps } from "./models";
 
-export const TextWrapper = styled.div<TextProps>`
+export const TextStyles = css`
   font-size: ${(props: TextProps) => {
     switch (props.size) {
       case TextSizes.sm:
@@ -35,3 +35,9 @@ export const TextWrapper = styled.div<TextProps>`
     return textDecoration.join(" ");
   }};
 `;
+
+export const TextWrapper = styled.div<TextProps>`
+  ${TextStyles}
+`;
+
+TextWrapper.displayName = "TextWrapper";
