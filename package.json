@@ -1,6 +1,6 @@
 {
   "name": "dont-use-this-ui",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "This is a UI component / utility collection project mainly for my personal projects",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

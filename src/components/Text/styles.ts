@@ -12,13 +12,31 @@ export const TextStyles = css`
       case TextSizes.lg:
         return "1.2rem";
       case TextSizes.xl:
-        return "7rem";
+        return "3rem";
       case TextSizes.xxl:
-        return "12rem";
+        return "5rem";
       default:
         return "1rem";
     }
   }};
+  @media (min-width: 480px) {
+    font-size: ${(props: TextProps) => {
+      switch (props.size) {
+        case TextSizes.sm:
+          return "0.8rem";
+        case TextSizes.m:
+          return "1rem";
+        case TextSizes.lg:
+          return "1.2rem";
+        case TextSizes.xl:
+          return "7rem";
+        case TextSizes.xxl:
+          return "12rem";
+        default:
+          return "1rem";
+      }
+    }};
+  }
   color: ${(props: TextProps) => colors[props.color]};
   line-height: 1.2;
   font-weight: ${(props: TextProps) => (props.weight ? props.weight : "400")};
